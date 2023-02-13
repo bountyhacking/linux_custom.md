@@ -1,6 +1,6 @@
 Customización v1 BountyHacker
  
---- CREANDO UN NUEVO USUARIO ---
+# CREANDO UN NUEVO USUARIO (aplicable cuando usamos una vm)
  
 sudo su
 useradd -m <tu_nombre_de_usuario>
@@ -15,10 +15,13 @@ sudo reboot
 # Luego nos logueamos con nuestras nuevas credenciales
 whoami # Deberia aparecernos nuestro nuevo username
  
---- Clonar el repositorio de github ---
+# Clonar el repositorio de github
  
 https://github.com/emersontech/KaliBspwm
-# Instrucciones bàsicas para utilizar la configuraciòn:
+
+Instrucciones bàsicas para utilizar la configuraciòn:
+
+```bash
 """
 ===========================================================================================================
   ____   _____ _______          ____  __    _____ _                _             _       
@@ -42,23 +45,24 @@ control shift w cerrar pestaña de terminal
 windows + "1,2,3,4,5,6,7,8,9,0" cambiar de escritorio
 windows + shift + "1,2,3,4,5,6,7,8,9,0" cambiar de escritorio la ventana actual al escritorio seleccionado
 ============================================================================================================
+```
  
-Los dot files los puedes modificar en las siguientes rutas.
- 
+# Los dot files los puedes modificar en las siguientes rutas.
+Para aplicar los cambios de las configuraciones más abajo: WINDOWS + ALT + R
+
 ~/.config/bspwm/bspwmrc <- Aqui se cambian los wallpapers
 ~/.config/polybar/
 ~/.config/picom/picom.conf
 ~/.config/sxhkd/sxhkdrc <- Aqui se cambian los comandos
+
  
-PARA APLICAR LOS CAMBIOS UTILIZAR: WINDOWS + ALT + R
- 
-"""
- 
---- Instalar complementos y programas extras ---
+# Instalar complementos y programas extras
  
 sudo apt install htop # Administrador de tareas
 sudo apt install gnome-control-center # Para hacer uso de configuraciones
 sudo apt install flameshot # Para fotocapturas
 sudo apt install redshift # Para filtro de luz azul
- 
-# Nota: el idioma del teclado se cambia desde el login del usuario.
+
+# Cambiar el keyboard layout desde la terminal
+
+setxkbmap es
