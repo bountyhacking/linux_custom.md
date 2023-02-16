@@ -70,6 +70,7 @@ sudo apt install htop # Administrador de tareas
 sudo apt install gnome-control-center # Para hacer uso de configuraciones
 sudo apt install flameshot # Para fotocapturas
 sudo apt install redshift # Para filtro de luz azul
+sudo apt install seclists
 ```
 
 # Cambiar el keyboard layout desde la terminal
