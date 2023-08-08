@@ -76,6 +76,13 @@ sudo apt install alien # Conversor de archivos TAR.GZ y RPM a .DEB
 sudo apt install -y docker.io
 sudo systemctl enable docker --now
 docker
+# Install postman
+# Download .tar.gz file on Postman website 
+tar xvzf ~/Downloads/Postman*.tar.gz -C /tmp/
+sudo chown -R root:root /tmp/Postman
+sudo mv /tmp/Postman /opt/
+sudo ln -s /opt/Postman/app/Postman /usr/local/bin/Postman
+Postman
 ```
 
 # Cambiar el keyboard layout desde la terminal
